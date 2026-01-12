@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Boulangerie Dupont</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produits.html">Nos produits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="reservation.html">Réservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="horaires.html">Horaires</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <h2 class="text-center mb-4">Réserver un Gâteau</h2>
+    <p class="text-center mb-5">Commandez votre gâteau au moins 48h à l'avance.</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form>
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom complet</label>
+                    <input type="text" class="form-control" id="nom" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telephone" class="form-label">Téléphone</label>
+                    <input type="tel" class="form-control" id="telephone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="gateau" class="form-label">Type de gâteau</label>
+                    <select class="form-select" id="gateau" required>
+                        <option selected disabled value="">Choisir...</option>
+                        <option value="fraisier">Fraisier</option>
+                        <option value="foret-noire">Forêt Noire</option>
+                        <option value="tarte-citron">Tarte au Citron Meringuée</option>
+                        <option value="royal-chocolat">Royal Chocolat</option>
+                        <option value="autre">Autre (préciser)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="parts" class="form-label">Nombre de parts</label>
+                    <input type="number" class="form-control" id="parts" min="4" max="50" required>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date de retrait souhaitée</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message ou demande particulière</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="rgpd" required>
+                    <label class="form-check-label" for="rgpd">
+                        J'accepte que mes données soient utilisées pour traiter ma commande.
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Envoyer la demande</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2026 Boulangerie Dupont. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

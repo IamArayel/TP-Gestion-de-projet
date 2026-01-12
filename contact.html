@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Boulangerie Dupont</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produits.html">Nos Produits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">Réservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="horaires.html">Horaires</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <h2 class="text-center mb-4">Nous Contacter</h2>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h3>Coordonnées</h3>
+            <p><strong>Adresse :</strong><br>
+            12 Rue de la Boulangerie<br>
+            75000 Paris</p>
+
+            <p><strong>Téléphone :</strong><br>
+            <a href="tel:+33123456789">01 23 45 67 89</a></p>
+
+            <p><strong>Email :</strong><br>
+            <a href="mailto:contact@boulangerie-dupont.fr">contact@boulangerie-dupont.fr</a></p>
+
+            <div class="mt-4">
+                <h4>Retrouvez-nous sur :</h4>
+                <a href="#" class="btn btn-outline-primary me-2">Facebook</a>
+                <a href="#" class="btn btn-outline-danger">Instagram</a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h3>Envoyez-nous un message</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="nom" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="sujet" class="form-label">Sujet</label>
+                    <input type="text" class="form-control" id="sujet" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2026 Boulangerie Dupont. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
